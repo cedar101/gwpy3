@@ -9,7 +9,13 @@ def weeks_elapsed(day1, day2):
     >>> weeks_elapsed(20, 3)
     2
     >>> weeks_elapsed(8, 5)
-
+    0
     >>> weeks_elapsed(40, 61)
-
+    3
     """
+    return int(abs(day1 - day2) / 7)
+    
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()

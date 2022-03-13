@@ -64,3 +64,7 @@ def get_birthday_weekday(current_weekday, current_day, birthday_day):
 
     days_diff = days_difference(current_day, birthday_day)
     return get_weekday(current_weekday, days_diff)
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
