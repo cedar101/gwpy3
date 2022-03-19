@@ -1,4 +1,4 @@
-def get_weekday(current_weekday, days_ahead):
+def get_weekday(current_weekday: int, days_ahead: int) -> int:
     """ (int, int) -> int
 
     Return which day of the week it will be days_ahead days from
@@ -24,7 +24,7 @@ def get_weekday(current_weekday, days_ahead):
     """
     return (current_weekday + days_ahead - 1) % 7 + 1
 
-def days_difference(day1, day2):
+def days_difference(day1: int, day2: int) -> int:
     """ (int, int) -> int
 
     Return the number of days between day1 and day2, which are both
@@ -41,7 +41,8 @@ def days_difference(day1, day2):
     return day2 - day1
 
 
-def get_birthday_weekday(current_weekday, current_day, birthday_day):
+def get_birthday_weekday(current_weekday: int, current_day: int,
+                         birthday_day: int) -> int:
     """ (int, int, int) -> int
 
     Return the day of the week it will be on birthday_day, given that
