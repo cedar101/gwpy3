@@ -7,4 +7,8 @@ def average(num1: float, num2: float) -> float:
      2.75
      """ 
      
-     return num1 + num2 / 2
+     return (num1 + num2) / 2
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()

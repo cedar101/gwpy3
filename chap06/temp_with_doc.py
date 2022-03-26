@@ -1,6 +1,6 @@
 """온도를 다루는 함수"""
 
-def to_celsius(t):
+def convert_to_celsius(t):
     """화씨를 섭씨로 변환합니다."""
     return round((t - 32.0) * 5.0 / 9.0)
 

@@ -5,3 +5,7 @@ def convert_to_celsius(fahrenheit: float) -> float:
     23.88888888888889
     """
     return (fahrenheit - 32.0) * 5.0 / 9.0
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()

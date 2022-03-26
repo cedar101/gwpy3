@@ -1,6 +1,6 @@
->>> help(str)
+>>> help(str) # doctest: +NORMALIZE_WHITESPACE, +ELLIPSIS
 Help on class str in module builtins:
-
+<BLANKLINE>
 class str(object)
  |  str(object='') -> str
  |  str(bytes_or_buffer[, encoding[, errors]]) -> str
@@ -20,6 +20,7 @@ class str(object)
  |
  |  __contains__(self, key, /)
  |      Return key in self.
+...
 
  [Lots of other names with leading and trailing underscores not shown here.]
 

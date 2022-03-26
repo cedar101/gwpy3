@@ -1,0 +1,22 @@
+>>> import math
+>>> type(math)
+<class 'module'>
+>>> help(math) # doctest: +NORMALIZE_WHITESPACE, +ELLIPSIS
+Help on module math:
+<BLANKLINE>
+NAME
+    math
+<BLANKLINE>
+DESCRIPTION
+    This module provides access to the mathematical functions
+    defined by the C standard.
+<BLANKLINE>
+FUNCTIONS
+    acos(...)
+        Return the arc cosine (measured in radians) of x.
+...
+    acosh(...)
+        Return the inverse hyperbolic cosine of x.
+...
+
+[Lots of other functions not shown here.]

@@ -1,0 +1,7 @@
+>>> print("__name__ is", __name__)
+__name__ is __main__
+>>> import echo
+__name__ is echo
+>>> print("After import, __name__ is", __name__, 
+...     "and echo.__name__ is", echo.__name__)
+After import, __name__ is __main__ and echo.__name__ is echo

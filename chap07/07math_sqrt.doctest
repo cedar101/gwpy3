@@ -1,8 +1,6 @@
 >>> import math
->>> help(math.sqrt)
+>>> help(math.sqrt) # doctest: +NORMALIZE_WHITESPACE, +ELLIPSIS
 Help on built-in function sqrt in module math:
-
+<BLANKLINE>
 sqrt(...)
-    sqrt(x)
-
     Return the square root of x.

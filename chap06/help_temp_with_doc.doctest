@@ -1,16 +1,16 @@
 >>> import temp_with_doc
->>> help(temp_with_doc)
+>>> help(temp_with_doc) # doctest: +NORMALIZE_WHITESPACE, +ELLIPSIS
 Help on module temp_with_doc:
-
+<BLANKLINE>
 NAME
-    temp_with_doc - Functions for working with temperatures.
-
-FILE
-    /home/pybook/modules/temp_with_doc.py
-
+    temp_with_doc - ...
+<BLANKLINE>
 FUNCTIONS
     above_freezing(t)
-        True if temperature in Celsius is above freezing, False otherwise.
-
+        ...
+<BLANKLINE>
     convert_to_celsius(t)
-        Convert Fahrenheit to Celsius.
+        ...
+FILE
+    .../temp_with_doc.py
+<BLANKLINE>

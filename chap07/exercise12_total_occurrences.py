@@ -6,7 +6,12 @@ def total_occurrences(s1: str, s2: str, ch: str) -> int:
     >>> total_occurrences('color', 'yellow', 'l')
     3
     >>> total_occurrences('red', 'blue', 'l')
-
+    1
     >>> total_occurrences('green', 'purple', 'b')
-
+    0
     """
+    return s1.count(ch) + s2.count(ch)
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()

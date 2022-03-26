@@ -1,7 +1,7 @@
 def above_freezing(celsius):
     """ (number) -> bool
 
-    celsius°¡ ¾î´ÂÁ¡º¸´Ù ³ôÀ¸¸é True¸¦ ¹ÝÈ¯ÇÑ´Ù. 
+    celsiusê°€ ì–´ëŠ”ì ë³´ë‹¤ ë†’ìœ¼ë©´ Trueë¥¼ ë°˜í™˜í•œë‹¤. 
 
     >>> above_freezing(5.2)
     True
@@ -11,3 +11,6 @@ def above_freezing(celsius):
 
     return celsius > 0
 
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()

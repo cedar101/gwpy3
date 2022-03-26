@@ -1,14 +1,15 @@
 >>> import temp_round
->>> help(temp_round)
+>>> help(temp_round) # doctest: +NORMALIZE_WHITESPACE, +ELLIPSIS
 Help on module temp_round:
-
+<BLANKLINE>
 NAME
     temp_round
-
-FILE
-    /home/pybook/modules/temp_round.py
-
+<BLANKLINE>
 FUNCTIONS
     above_freezing(t)
-
+<BLANKLINE>
     convert_to_celsius(t)
+<BLANKLINE>
+FILE
+    .../temp_round.py
+<BLANKLINE>

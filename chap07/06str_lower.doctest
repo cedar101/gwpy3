@@ -1,0 +1,5 @@
+>>> help(str.lower) # doctest: +NORMALIZE_WHITESPACE, +ELLIPSIS
+Help on method_descriptor:
+<BLANKLINE>
+lower(...)
+    Return a copy of the string converted to lowercase.

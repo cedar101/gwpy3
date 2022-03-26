@@ -1,8 +1,8 @@
->>> help(0)
+>>> help(0) # doctest: +NORMALIZE_WHITESPACE, +ELLIPSIS
 Help on int object:
-
+<BLANKLINE>
 class int(object)
- |  int(x=0) -> integer
+ |  int([x]) -> integer
  |  int(x, base=10) -> integer
  |
  |  Convert a number or string to an integer, or return 0 if no arguments
@@ -16,7 +16,7 @@ class int(object)
  |  Base 0 means to interpret the base from the string as an integer literal.
  |  >>> int('0b100', base=0)
  |  4
- |
+ ...
  |  Methods defined here:
  |
  |  __abs__(self, /)

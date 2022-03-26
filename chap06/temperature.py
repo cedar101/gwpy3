@@ -16,3 +16,7 @@ def above_freezing(celsius: float) -> bool:
     False
     """
     return celsius > 0
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()

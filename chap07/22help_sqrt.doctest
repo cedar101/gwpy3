@@ -1,14 +1,10 @@
 >>> import math
 >>> math.sqrt.__doc__
-'sqrt(x)\n\nReturn the square root of x.'
+'Return the square root of x.'
 >>> print(math.sqrt.__doc__)
-sqrt(x)
-
 Return the square root of x.
->>> help(math.sqrt)
+>>> help(math.sqrt) # doctest: +NORMALIZE_WHITESPACE, +ELLIPSIS
 Help on built-in function sqrt in module math:
-
+<BLANKLINE>
 sqrt(...)
-    sqrt(x)
-
     Return the square root of x.
