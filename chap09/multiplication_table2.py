@@ -14,7 +14,7 @@ def print_table(n: int) -> None:
 
     # 헤더 행을 출력한다.
     for i in numbers:
-        print('\t' + str(i), end='')
+        print(f'\t{i}', end='')
 
     # 헤더 행을 끝낸다.
     print()
@@ -24,7 +24,7 @@ def print_table(n: int) -> None:
 
         print (i, end='')  #(2)
         for j in numbers:   #(3)
-            print('\t' + str(i * j), end='') #(4)
+            print(f'\t{i * j}', end='') #(4)
 
         # 현재 행을 끝낸다. 
         print() #(5)

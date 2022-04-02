@@ -1,0 +1,4 @@
+>>> celegans_phenotypes = ['Emb', 'Him', 'Unc', 'Lon', 'Dpy', 'Sma']
+>>> useful_markers = celegans_phenotypes[0:4]
+>>> useful_markers
+['Emb', 'Him', 'Unc', 'Lon']

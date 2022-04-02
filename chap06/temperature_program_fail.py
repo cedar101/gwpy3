@@ -4,7 +4,7 @@ def convert_to_celsius(fahrenheit: float) -> float:
     >>> convert_to_celsius(75)
     23.88888888888889
     """
-    return (fahrenheit - 32.0) * 5.0 / 9.0
+    return fahrenheit - 32.0 * 5.0 / 9.0
 
 
 def above_freezing(celsius: float) -> bool:

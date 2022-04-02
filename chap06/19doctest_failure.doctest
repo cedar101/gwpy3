@@ -1,7 +1,8 @@
->>> import testmod
->>> doctest.testmod()
+>>> import temperature_program_fail as temperature_program
+>>> import doctest
+>>> doctest.testmod(temperature_program)    # doctest: +ELLIPSIS, +NORMALIZE_WHITESPACE
 **********************************************************************
-File "__main__", line 6, in __main__.convert_to_celsius
+File "...", line ..., in ...convert_to_celsius
 Failed example:
     convert_to_celsius(75)
 Expected:
@@ -10,6 +11,6 @@ Got:
     57.22222222222222
 **********************************************************************
 1 items had failures:
-   1 of   1 in __main__.convert_to_celsius
+   1 of   1 in ...convert_to_celsius
 ***Test Failed*** 1 failures.
 TestResults(failed=1, attempted=3)

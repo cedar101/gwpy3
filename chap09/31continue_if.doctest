@@ -10,3 +10,14 @@
 10
 >>> count
 2
+>>> total = 0                    
+>>> count = 0                    
+>>> for i, _ in enumerate(s):      
+...     if not _.isalpha():
+...         total += int(_)
+...         count += 1
+... 
+>>> total
+10
+>>> count
+2

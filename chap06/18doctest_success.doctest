@@ -1,0 +1,4 @@
+>>> import temperature_program
+>>> import doctest
+>>> doctest.testmod(temperature_program)
+TestResults(failed=0, attempted=3)

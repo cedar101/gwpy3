@@ -7,7 +7,12 @@ def same_first_last(L: list) -> bool:
     >>> same_first_last([3, 4, 2, 8, 3])
     True
     >>> same_first_last(['apple', 'banana', 'pear'])
-
+    False
     >>> same_first_last([4.0, 4.5])
-
+    False
     """
+    return L[0] == L[-1]
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()

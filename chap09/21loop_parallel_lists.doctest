@@ -6,3 +6,9 @@
 Li 6.941
 Na 22.98976928
 K 39.0983
+>>> for metal, weight in zip(metals, weights):
+...     print(metal, weight)
+... 
+Li 6.941
+Na 22.98976928
+K 39.0983

@@ -1,0 +1,9 @@
+>>> krypton = ('Krypton', 'Kr', -157.2, -153.4)
+>>> name = 0
+>>> symbol = 1
+>>> melting_point = 2
+>>> boiling_point = 3
+>>> krypton[symbol]
+'Kr'
+>>> krypton[melting_point]
+-157.2

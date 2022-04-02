@@ -1,0 +1,11 @@
+>>> values = [4, 10, 3, 8, -6]
+>>> for i in range(len(values)):
+...     values[i] *= 2
+... 
+>>> values
+[8, 20, 6, 16, -12]
+>>> new_values = []
+>>> for value in values:
+...     new_values.append(value // 2)
+>>> new_values
+[4, 10, 3, 8, -6]

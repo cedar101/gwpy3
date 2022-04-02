@@ -1,3 +1,9 @@
+argon
+nitrogen
+
+>>> from test_input import test_input_generator
+>>> input = test_input_generator('argon', 'nitrogen')
+
 >>> nobles = ['helium', 'neon', 'argon', 'krypton', 'xenon', 'radon']
 >>> gas = input('Enter a gas: ')
 Enter a gas: argon
