@@ -1,8 +1,9 @@
 text = ""
-while text != "quit": 
+while True: 
     text = input("화학식을 입력하세요 (종료하려면 'quit'): ")
     if text == "quit":
-        print("프로그램을 종료합니다.") 
+        print("프로그램을 종료합니다.")
+        break
     elif text == "H2O": 
         print("물")
     elif text == "NH3": 
