@@ -7,8 +7,8 @@
 2 3
 3 8
 4 -6
->>> for i, values in enumerate(values):
-...     print(i, values)
+>>> for i, value in enumerate(values):
+...     print(i, value)
 ... 
 0 4
 1 10

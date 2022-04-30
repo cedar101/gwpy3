@@ -1,3 +1,4 @@
+>>> vowels = {'a', 'e', 'i', 'o', 'u'}
 >>> type(vowels)
 <class 'set'>
 >>> type({1, 2, 3})

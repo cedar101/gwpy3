@@ -2,13 +2,13 @@
 >>> 'eagle' in bird_to_observations
 True
 >>> if 'eagle' in bird_to_observations:
-...   print('eagles have been seen')
+...     print('eagles have been seen')
 ...
 eagles have been seen
 >>> del bird_to_observations['eagle']
 >>> 'eagle' in bird_to_observations
 False
 >>> if 'eagle' in bird_to_observations:
-...   print('eagles have been seen')
+...     print('eagles have been seen')
 ...
 >>>

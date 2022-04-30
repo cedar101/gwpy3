@@ -8,7 +8,6 @@
 >>> for character in rock[:5]:
 ...     print(character)
 ...
-
 a
 n
 t

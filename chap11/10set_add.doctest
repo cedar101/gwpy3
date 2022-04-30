@@ -1,0 +1,11 @@
+>>> vowels = {'a', 'e', 'i', 'o', 'u'}
+>>> vowels # doctest: +SKIP
+{'o', 'u', 'a', 'e', 'i'}
+>>> vowels == {'o', 'u', 'a', 'e', 'i'}
+True
+>>> vowels.add('y')
+>>> vowels # doctest: +SKIP
+{'u', 'y', 'e', 'a', 'o', 'i'}
+>>> vowels == {'u', 'y', 'e', 'a', 'o', 'i'}
+True
+

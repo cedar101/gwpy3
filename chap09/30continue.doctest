@@ -4,8 +4,8 @@
 >>> for i in range(len(s)):
 ...     if s[i].isalpha():
 ...         continue
-...     total = total + int(s[i])
-...     count = count + 1
+...     total += int(s[i])
+...     count += 1
 ...
 >>> total
 10

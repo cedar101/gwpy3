@@ -1,0 +1,5 @@
+>>> vowels = {'a', 'e', 'i', 'o', 'u'}
+>>> vowels # doctest: +SKIP
+{'a', 'u', 'o', 'i', 'e'}
+>>> vowels == {'a', 'u', 'o', 'i', 'e'}
+True
