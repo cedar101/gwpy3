@@ -1,8 +1,10 @@
->>> help(int)
+>>> help(int) # doctest: +ELLIPSIS
 Help on class int in module builtins:
-
+<BLANKLINE>
 class int(object)
->>> help(SyntaxError)
+...
+>>> help(SyntaxError) # doctest: +ELLIPSIS
 Help on class SyntaxError in module builtins:
-
+<BLANKLINE>
 class SyntaxError(Exception)
+...

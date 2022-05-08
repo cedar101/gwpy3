@@ -6,7 +6,7 @@ def smallest_value_skip(reader: TextIO) -> int:
     """time_series 헤더로 시작하는 reader를 읽어서 처리한다.
     헤더 이후에 나오는 가장 작은 값을 반환한다. 
     하이픈으로 표시되는 누락 값은 건너뛴다.
-
+    >>> from io import StringIO
     >>> infile = StringIO('Example\\n1\\n-\\n3\\n')
     >>> smallest_value_skip(infile)
     1
@@ -26,5 +26,8 @@ def smallest_value_skip(reader: TextIO) -> int:
     return smallest
 
 if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
+    
     with open('hebron.txt', 'r') as input_file:
         print(smallest_value_skip(input_file))

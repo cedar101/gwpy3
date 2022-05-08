@@ -1,3 +1,4 @@
+>>> from exercise_country import Country
 >>> canada = Country('Canada', 34482779, 9984670)
 >>> canada.name
 'Canada'

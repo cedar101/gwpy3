@@ -22,6 +22,9 @@ def sum_number_pairs(input_file: TextIO, output_file: TextIO) -> None:
         output_file.write(new_line)
 
 if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
+    
     with open('number_pairs.txt', 'r') as input_file, \
             open('number_pair_sums.txt', 'w') as output_file:
         sum_number_pairs(input_file, output_file)

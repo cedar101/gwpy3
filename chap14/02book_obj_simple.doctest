@@ -1,28 +1,39 @@
 >>> class Book:
-...     """√•ø° ∞¸«— ¡§∫∏"""
+...     """Ï±ÖÏóê Í¥ÄÌïú Ï†ïÎ≥¥"""
 ...
 >>> type(str)
 <class 'type'>
 >>> type(Book)
 <class 'type'>
->>> dir(Book)
+>>> dir(Book) # doctest: +NORMALIZE_WHITESPACE
 ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__',
 '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__',
 '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__',
 '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__',
 '__str__', '__subclasshook__', '__weakref__']
->>> set(dir(Book)) - set(dir(object))
-{'__module__', '__weakref__', '__dict__'}
->>> b = Book()
->>> type(b)
+>>> set(dir(Book)) - set(dir(object)) == {'__module__', '__weakref__', '__dict__'}
+True
+>>> ruby_book = Book()
+>>> ruby_book.title = 'Programming Ruby'
+>>> ruby_book.authors = ['Thomas', 'Fowler', 'Hunt']
+>>> ruby_book.title
+'Programming Ruby'
+>>> ruby_book.authors
+['Thomas', 'Fowler', 'Hunt']
+>>> title
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'title' is not defined
+>>> pybook = Book()
+>>> type(pybook)
 <class '__main__.Book'>
->>> b
-<__main__.Book object at 0x58a550>
->>> help(Book)
+>>> pybook # doctest: +ELLIPSIS
+<__main__.Book object at 0x...>
+>>> help(Book) # doctest: +NORMALIZE_WHITESPACE
 Help on class Book in module __main__:
-
+<BLANKLINE>
 class Book(builtins.object)
- |  √•ø° ∞¸«— ¡§∫∏
+ |  Ï±ÖÏóê Í¥ÄÌïú Ï†ïÎ≥¥
  |
  |  Data descriptors defined here:
  |
@@ -31,6 +42,7 @@ class Book(builtins.object)
  |
  |  __weakref__
  |      list of weak references to the object (if defined)
+<BLANKLINE>
 >>> pybook.title = "Practical Programming"
 >>> pybook.authors = ["Campbell", "Gries", "Montojo"]
 >>> pybook.publisher = "Pragmatic Bookshelf"
@@ -43,5 +55,5 @@ class Book(builtins.object)
 'Pragmatic Bookshelf'
 >>> pybook.ISBN
 '978-1-6805026-8-8'
->>> pybook
-<__main__.Book object at 0x586ff0>
+>>> pybook # doctest: +ELLIPSIS
+<__main__.Book object at 0x...>

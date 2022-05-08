@@ -1,3 +1,4 @@
+>>> import book
 >>> python_book_1 = book.Book(
 ...     'Practical Programming',
 ...     ['Campbell', 'Gries', 'Montojo'],

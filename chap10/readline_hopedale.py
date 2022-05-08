@@ -1,14 +1,14 @@
 input_file = open("hopedale.txt", "r")
 
-# Ã¹ ¹øÂ° ÁÙÀ» °Ç³Ê¶Ú´Ù.
+# ì²« ë²ˆì§¸ ì¤„ì„ ê±´ë„ˆë›´ë‹¤.
 input_file.readline()
 
-# ÁÖ¼®µéÀ» °Ç³Ê¶Ú´Ù.
+# ì£¼ì„ë“¤ì„ ê±´ë„ˆë›´ë‹¤.
 line = input_file.readline()
 while line.startswith('#'):
 	line = input_file.readline()
 
-# ÀÌÁ¦ ³ª¸ÓÁö ÁÙµéÀ» Ã³¸®ÇÑ´Ù.
+# ì´ì œ ë‚˜ë¨¸ì§€ ì¤„ë“¤ì„ ì²˜ë¦¬í•œë‹¤.
 for line in input_file:
     line = line.strip()
     print line

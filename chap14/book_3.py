@@ -1,5 +1,23 @@
 class Book:
-    """제목과 저자 목록, 출판사, ISBN, 가격을 포함하는 책 정보
+    """
+    제목과 저자 목록, 출판사, ISBN, 가격을 포함하는 책 정보
+    
+    >>> python_book = Book( 
+    ...        'Practical Programming', 
+    ...        ['Campbell', 'Gries', 'Montojo'], 
+    ...        'Pragmatic Bookshelf', 
+    ...        '978-1-6805026-8-8', 
+    ...        25.0)
+    >>> python_book.title
+    'Practical Programming'
+    >>> python_book.authors
+    ['Campbell', 'Gries', 'Montojo']
+    >>> python_book.publisher
+    'Pragmatic Bookshelf'
+    >>> python_book.isbn
+    '978-1-6805026-8-8'
+    >>> python_book.price
+    25.0
     """
 
     def __init__(self, title, authors, publisher, isbn, price):
@@ -7,30 +25,13 @@ class Book:
 
         제목이 title이고, 작성한 저자는 authors고, 출판사는 publisher고, 
         isbn은 ISBN이고, 가격은 price 달러인 새 책을 생성한다.
-
-        >>> python_book = Book( \
-                'Practical Programming', \
-                ['Campbell', 'Gries', 'Montojo'], \
-                'Pragmatic Bookshelf', \
-                '978-1-6805026-8-8', \
-                25.0)
-        >>> python_book.title
-        'Practical Programming'
-        >>> python_book.authors
-        ['Campbell', 'Gries', 'Montojo']
-        >>> python_book.publisher
-        'Pragmatic Bookshelf'
-        >>> python_book.isbn
-        '978-1-6805026-8-8'
-        >>> python_book.price
-        25.0
         """
 
         self.title = title
         # 호출자가 나중에 리스트를 수정할 경우를 대비해서 저자 리스트를 복사한다.
         self.authors = authors[:]
         self.publisher = publisher
-        self.ISBN = isbn
+        self.isbn = isbn
         self.price = price
 
     def num_authors(self):
@@ -38,12 +39,12 @@ class Book:
 
         이 책의 저자수를 반환한다. 
 
-        >>> python_book = Book( \
-                'Practical Programming', \
-                ['Campbell', 'Gries', 'Montojo'], \
-                'Pragmatic Bookshelf', \
-                '978-1-6805026-8-8', \
-                25.0)
+        >>> pybook = Book( 
+        ...        'Practical Programming', 
+        ...        ['Campbell', 'Gries', 'Montojo'], 
+        ...        'Pragmatic Bookshelf', 
+        ...        '978-1-6805026-8-8', 
+        ...        25.0)
         >>> pybook.num_authors()
         3
         """
@@ -65,7 +66,9 @@ Price: ${4}""".format(
     self.price)
 
 if __name__ == '__main__':
-
+    import doctest
+    doctest.testmod()
+    
     python_book = Book(
         'Practical Programming',
         ['Campbell', 'Gries', 'Montojo'],

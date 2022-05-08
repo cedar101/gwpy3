@@ -1,0 +1,10 @@
+>>> from university_str import Faculty
+>>> paul = Faculty('Paul', 'Ajax', 'pgries@cs.toronto.edu', '1234')
+>>> str(paul)
+'Paul\nAjax\npgries@cs.toronto.edu\n1234\nCourses: '
+>>> print(paul)  # doctest: +NORMALIZE_WHITESPACE
+Paul
+Ajax
+pgries@cs.toronto.edu
+1234
+Courses:

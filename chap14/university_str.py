@@ -54,7 +54,7 @@ class Student(Member):
 
     def __init__(self, name: str, address: str, email: str,
                  student_num: str) -> None:
-       """이름과 집 주소, 이메일 주소, 학번(student_num), 빈 수강했던 과목 목록, 
+        """이름과 집 주소, 이메일 주소, 학번(student_num), 빈 수강했던 과목 목록, 
         빈 수강 중인 과목 목록으로 새로운 학생을 생성한다.
         """
 
@@ -64,7 +64,9 @@ class Student(Member):
         self.courses_taking = []
 
 if __name__ == "__main__":
-    f = Faculty('Paul', 'Ajax', 'pgries@cs.toronto.edu', '1234')
-    print(f)
     import doctest
     doctest.testmod()
+    
+    f = Faculty('Paul', 'Ajax', 'pgries@cs.toronto.edu', '1234')
+    print(f)
+

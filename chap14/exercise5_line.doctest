@@ -1,3 +1,4 @@
+>>> from exercise_prov import LineSegment
 >>> segment = LineSegment(Point(1, 1), Point(3, 2))
 >>> segment.slope()
 0.5

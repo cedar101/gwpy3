@@ -1,3 +1,4 @@
+>>> from book_str import Book
 >>> python_book = Book(
 ...         'Practical Programming',
 ...         ['Campbell', 'Gries', 'Montojo'],

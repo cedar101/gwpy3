@@ -4,7 +4,7 @@ import time_series
 def smallest_value(reader: TextIO) -> int:
     """reader를 읽어서 처리하고, time_series 헤더 이후에 나오는 가장 작은 값을 
     반환한다.
-
+    >>> from io import StringIO
     >>> infile = StringIO('Example\\n1\\n2\\n3\\n')
     >>> smallest_value(infile)
     1
@@ -29,5 +29,8 @@ def smallest_value(reader: TextIO) -> int:
     return smallest
 
 if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
+    
     with open('hopedale.txt', 'r') as input_file:
         print(smallest_value(input_file))

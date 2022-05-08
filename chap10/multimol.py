@@ -18,7 +18,7 @@ def read_molecule(reader: TextIO) -> list:
 
     # 분자명: "COMPND  name" 
     parts = line.split()
-    name = parts[1]
+    compnd, name = parts
 
     # 다른 줄은 "END"나 "ATOM num atom_type x y z" 중 하나다.
     molecule = [name]
@@ -60,7 +60,10 @@ def read_all_molecules(reader: TextIO) -> list:
     return result
 
 if __name__ == '__main__':
-    molecule_file = open('multimol.pdb', 'r')
-    molecules = read_all_molecules(molecule_file)
-    molecule_file.close()
+    import doctest
+    doctest.testmod()
+    
+    with open('multimol.pdb', 'r') as molecule_file:
+        molecules = read_all_molecules(molecule_file)
+    
     print(molecules)

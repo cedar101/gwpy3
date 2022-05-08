@@ -1,6 +1,7 @@
 from typing import TextIO
 from io import StringIO
 import time_series
+import ast
 
 def find_largest(line: str) -> int:
     """'.'으로 끝나는 정수들이 여백으로 구분되어 있는 줄에서 가장 큰 값을  
@@ -41,5 +42,8 @@ def process_file(reader: TextIO) -> int:
     return largest
 
 if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
+    
     with open('lynx.txt', 'r') as input_file:
         print(process_file(input_file))

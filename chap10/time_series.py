@@ -3,7 +3,7 @@ from io import StringIO
 
 def skip_header(reader: TextIO) -> str:
     """reader 내 헤더를 건너뛰고 첫 번째 진짜 데이터를 반환한다.
-
+    >>> from io import StringIO
     >>> infile = StringIO('Example\\n# Comment\\n# Comment\\nData line\\n')
     >>> skip_header(infile)
     'Data line\\n'

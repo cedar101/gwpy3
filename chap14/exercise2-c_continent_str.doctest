@@ -1,0 +1,13 @@
+>>> import exercise_prov as country
+>>> canada = country.Country('Canada', 34482779, 9984670)
+>>> usa = country.Country('United States of America', 313914040,
+...                       9826675)
+>>> mexico = country.Country('Mexico', 112336538, 1943950)
+>>> countries = [canada, usa, mexico]
+>>> from exercise_continent import Continent
+>>> north_america = Continent('North America', countries)
+>>> print(north_america)
+North America
+Canada은/는 인구가 34482779 명이고 면적은 9984670 제곱킬로미터입니다.
+United States of America은/는 인구가 313914040 명이고 면적은 9826675 제곱킬로미터입니다.
+Mexico은/는 인구가 112336538 명이고 면적은 1943950 제곱킬로미터입니다.

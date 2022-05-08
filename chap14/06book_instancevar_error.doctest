@@ -3,7 +3,7 @@
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 AttributeError: type object 'Book' has no attribute 'title'
->>> dir(book.Book)
+>>> dir(book.Book) # doctest: +NORMALIZE_WHITESPACE
 ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__',
 '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__',
 '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__',
@@ -15,7 +15,7 @@ AttributeError: type object 'Book' has no attribute 'title'
 ...         'Pragmatic Bookshelf',
 ...         '978-1-6805026-8-8',
 ...         25.0)
->>> dir(python_book)
+>>> dir(python_book) # doctest: +NORMALIZE_WHITESPACE
 ['ISBN', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__',
 '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__',
 '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__',

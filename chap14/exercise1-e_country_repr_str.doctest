@@ -1,0 +1,16 @@
+>>> from exercise_country import Country
+>>> canada = Country('Canada', 34482779, 9984670)
+>>> canada # doctest: +ELLIPSIS
+<exercise_country.Country object at 0x...>
+>>> print(canada)
+Canada은/는 인구가 34482779 명이고 면적은 9984670 제곱킬로미터입니다.
+>>> [canada] # doctest: +ELLIPSIS
+[<exercise_country.Country object at 0x...>]
+>>> print([canada]) # doctest: +ELLIPSIS
+[<exercise_country.Country object at 0x...>]
+>>> from exercise_prov import Country
+>>> canada = Country('Canada', 34482779, 9984670)
+>>> canada
+Country('Canada', 34482779, 9984670)
+>>> [canada]
+[Country('Canada', 34482779, 9984670)]

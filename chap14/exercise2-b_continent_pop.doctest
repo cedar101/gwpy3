@@ -1,0 +1,10 @@
+>>> import exercise_prov as country
+>>> canada = country.Country('Canada', 34482779, 9984670)
+>>> usa = country.Country('United States of America', 313914040,
+...                       9826675)
+>>> mexico = country.Country('Mexico', 112336538, 1943950)
+>>> countries = [canada, usa, mexico]
+>>> from exercise_continent import Continent
+>>> north_america = Continent('North America', countries)
+>>> north_america.total_population()
+460733357

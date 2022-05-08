@@ -1,0 +1,4 @@
+>>> from exercise_country import Country
+>>> canada = Country('Canada', 34482779, 9984670)
+>>> canada.population_density()
+3.4535722262227995

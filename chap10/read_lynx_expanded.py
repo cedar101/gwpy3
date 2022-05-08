@@ -49,6 +49,9 @@ def process_file(reader: TextIO) -> int:
     return largest
     
 if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
+    
     with open('lynx.txt', 'r') as input_file: 
         print(process_file(input_file))
         

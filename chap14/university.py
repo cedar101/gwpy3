@@ -14,7 +14,7 @@ class Faculty(Member):
 
     def __init__(self, name: str, address: str, email: str,
                  faculty_num: str) -> None:
-       """이름과 집 주소, 이메일 주소, 교직원 번호(faculty_num), 
+        """이름과 집 주소, 이메일 주소, 교직원 번호(faculty_num), 
         빈 과목 목록으로 새로운 교수를 생성한다.
         """
 
